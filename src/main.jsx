@@ -5,6 +5,7 @@ import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 import Layout from './components/Layout';
 import NewClient, {action as newClientAction} from './pages/NewClient';
 import Index, {loader as clientsLoader } from './pages/Index';
+import ErrorPage from './components/ErrorPage';
 
 
 // en components pongo lo que es reutilizable
@@ -18,7 +19,8 @@ const router = createBrowserRouter(
       {
         index: true, // Indicamos que aqui se va a renderizar esta pagina por defecto, primera! Igual utilizando el Layout
         element: <Index/>, 
-        loader: clientsLoader
+        loader: clientsLoader,
+        errorElement: <ErrorPage/>
       },
       {
         path: '/clients/new',
@@ -26,7 +28,7 @@ const router = createBrowserRouter(
         action: newClientAction
       }
     ]
-  },
+  }, 
 ]
 )
 
