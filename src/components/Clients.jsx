@@ -16,7 +16,7 @@ const Clients = ({ client }) => {
                     {email}
                 </p>
                 <p className='text-gray-600'>
-                    <span className=' text-gray-800 uppercase font-bold'>Telefono: </span>
+                    <span className=' text-gray-800 uppercase font-bold'>Phone: </span>
                     {telefono}
                 </p>
             </td>
