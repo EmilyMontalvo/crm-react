@@ -1,11 +1,11 @@
 import React from 'react'
 import { useLoaderData } from 'react-router-dom';
 import Clients from '../components/Clients';
-import { obtenerClientes } from '../data/Clientes';
+import { loadClients } from '../data/clientes';
 
 export function loader() {
    // Siempre tiene que haber un return en los loader
-   const clients = obtenerClientes()
+   const clients = loadClients()
     return clients
 
 }

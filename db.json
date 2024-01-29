@@ -1,39 +1,62 @@
 {
-    "clients" : [
-        {
-          "id": 1,
-          "nombre": "Juan",
-          "telefono": 102013313,
-          "email": "juan@juan.com",
-          "empresa": "Codigo Con Juan"
-        },
-        {
-          "id": 2,
-          "nombre": "Karen",
-          "telefono": 138198313,
-          "email": "karen@juan.com",
-          "empresa": "Codigo Con Juan"
-        },
-        {
-          "id": 3,
-          "nombre": "Josue",
-          "telefono": 31983913,
-          "email": "josue@juan.com",
-          "empresa": "Codigo Con Juan"
-        },
-        {
-          "id": 4,
-          "nombre": "Miguel",
-          "telefono": 319381983,
-          "email": "miguel@juan.com",
-          "empresa": "Codigo Con Juan"
-        },
-        {
-          "id": 5,
-          "nombre": "Pedro",
-          "telefono": 1398198938,
-          "email": "pedro@juan.com",
-          "empresa": "Codigo Con Juan"
-        }
-      ]
+  "clients": [
+    {
+      "id": 1,
+      "name": "Juan",
+      "phone": 102013313,
+      "email": "juan@juan.com",
+      "company": "Codigo Con Juan"
+    },
+    {
+      "id": 2,
+      "name": "Karen",
+      "phone": 138198313,
+      "email": "karen@juan.com",
+      "company": "Codigo Con Juan"
+    },
+    {
+      "id": 3,
+      "name": "Josue",
+      "phone": 31983913,
+      "email": "josue@juan.com",
+      "company": "Pacifico"
+    },
+    {
+      "id": 4,
+      "name": "Miguel",
+      "phone": 319381983,
+      "email": "miguel@juan.com",
+      "company": "Pichincha"
+    },
+    {
+      "id": 5,
+      "name": "Pedro",
+      "phone": 1398198938,
+      "email": "pedro@juan.com",
+      "company": "Procredit"
+    },
+    {
+      "id": 6,
+      "name": "Julia",
+      "phone": 1750839175,
+      "email": "julio@juan.com",
+      "company": "Chefarina"
+    },
+    {
+      "id": "26de",
+      "name": "Emily",
+      "company": "Procredit",
+      "email": "emily.montalvo@epn.edu.ec",
+      "phone": "591475",
+      "notes": "Programanding"
+    },
+    {
+      "id": "8345",
+      "name": "Gabriela",
+      "company": "Procredit",
+      "email": "emily.montalvo3006@gmail.com",
+      "phone": "591475",
+      "notes": "hujikolp"
+    }
+  ]
 }

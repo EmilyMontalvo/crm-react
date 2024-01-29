@@ -1,14 +1,14 @@
 import React from 'react'
-import { useNavigate, Form, useActionData } from 'react-router-dom'
-import MyForm from '../components/Form';
+import { useNavigate, Form, useActionData, redirect } from 'react-router-dom'
+import MyForm from '../components/MyForm';
 import Error from '../components/Error';
+import { addClients } from '../data/clientes';
 
 export async function action({request}){
+
   // desde el formdata puedo acceder a los datos del formulario
   const formData =  await request.formData()
- 
   const datos = Object.fromEntries(formData)
-
   const email = formData.get('email')
 
   //Validación
@@ -25,8 +25,11 @@ export async function action({request}){
   if(Object.keys(errores).length){
     return errores
   }
-  
+ // Validation is passed
+  await addClients(datos)
 
+  return redirect('/') //tambien los actions tienen que retornar algo
+  
 }
 
 const NewClient = () => {
