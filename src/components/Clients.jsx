@@ -1,8 +1,16 @@
 import React from 'react'
+import { useNavigate, Form, redirect, useActionData } from 'react-router-dom'
+import { deleteClient } from '../data/clientes'
+
+export async function action({params}){
+    await deleteClient(params.clientId)
+    return redirect('/')
+}
 
 const Clients = ({ client }) => {
 
-    const { name, company, phone, email  } = client
+    const navigate = useNavigate()
+    const { name, company, phone, email, id } = client
 
     return (
         <tr className='border-b'>
@@ -21,12 +29,31 @@ const Clients = ({ client }) => {
                 </p>
             </td>
             <td className='p-6 flex gap-3 justify-center'>
-                <button type="button" className='bg-blue-600 hover:bg-blue-700 uppercase font-bold text-xs text-white p-4'>
+                <button
+                    type="button"
+                    className='bg-blue-600 hover:bg-blue-700 uppercase font-bold text-xs text-white p-4'
+                    onClick={() => navigate(`/clients/${id}/edit`)}
+                >
                     Edit
                 </button>
-                <button type="button" className='bg-red-600 hover:bg-red-700 uppercase font-bold text-xs text-white p-3'>
+                <Form
+                method='POST'
+                action={`clients/${id}/delete`}
+                onSubmit={(e) => {
+                    if(!confirm('Do you want to delete this client?')){
+                        e.preventDefault()
+                    }
+                }}
+                >
+                
+                <button 
+                    type="submit" 
+                    className='bg-red-600 hover:bg-red-700 uppercase font-bold text-xs text-white p-3'
+                    >
                     Delete
                 </button>
+                </Form>
+               
 
             </td>
         </tr>

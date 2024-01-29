@@ -6,6 +6,9 @@ import Layout from './components/Layout';
 import NewClient, {action as newClientAction} from './pages/NewClient';
 import Index, {loader as clientsLoader } from './pages/Index';
 import ErrorPage from './components/ErrorPage';
+import EditClients from './pages/EditClients';
+import { loader as editClientLoader, action as editClientAction } from './pages/EditClients';
+import { action as deleteClientAction } from './components/Clients';
 
 
 // en components pongo lo que es reutilizable
@@ -25,7 +28,19 @@ const router = createBrowserRouter(
       {
         path: '/clients/new',
         element: <NewClient/>, 
-        action: newClientAction
+        action: newClientAction,
+        errorElement: <ErrorPage/>
+      },
+      {
+        path: '/clients/:clientId/edit', //Despues de los dos puntos ponemos el nombre de la variable para rutas dinamicas
+        element: <EditClients/>,
+        loader: editClientLoader,
+        action: editClientAction,
+        errorElement: <ErrorPage/>
+      },
+      {
+        path: '/clients/:clientId/delete',
+        action: deleteClientAction
       }
     ]
   }, 

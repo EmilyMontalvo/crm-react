@@ -4,6 +4,7 @@ import MyForm from '../components/MyForm';
 import Error from '../components/Error';
 import { addClients } from '../data/clientes';
 
+
 export async function action({request}){
 
   // desde el formdata puedo acceder a los datos del formulario

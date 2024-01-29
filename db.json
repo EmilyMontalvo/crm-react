@@ -1,62 +1,55 @@
 {
   "clients": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Juan",
       "phone": 102013313,
       "email": "juan@juan.com",
       "company": "Codigo Con Juan"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Karen",
       "phone": 138198313,
       "email": "karen@juan.com",
       "company": "Codigo Con Juan"
     },
     {
-      "id": 3,
-      "name": "Josue",
-      "phone": 31983913,
+      "name": "Josue actualizado",
+      "company": "Pacifico",
       "email": "josue@juan.com",
-      "company": "Pacifico"
+      "phone": "31983913",
+      "notes": "nueva nota",
+      "id": "3"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Miguel",
       "phone": 319381983,
       "email": "miguel@juan.com",
       "company": "Pichincha"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Pedro",
       "phone": 1398198938,
       "email": "pedro@juan.com",
       "company": "Procredit"
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Julia",
       "phone": 1750839175,
       "email": "julio@juan.com",
       "company": "Chefarina"
     },
     {
-      "id": "26de",
-      "name": "Emily",
-      "company": "Procredit",
-      "email": "emily.montalvo@epn.edu.ec",
+      "id": "9ce6",
+      "name": "Camila",
+      "company": "juju",
+      "email": "emita_gaby06@hotmail.com",
       "phone": "591475",
-      "notes": "Programanding"
-    },
-    {
-      "id": "8345",
-      "name": "Gabriela",
-      "company": "Procredit",
-      "email": "emily.montalvo3006@gmail.com",
-      "phone": "591475",
-      "notes": "hujikolp"
+      "notes": "Emily Gabriela"
     }
   ]
 }
